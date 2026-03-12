@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lessons & Materials | Calculus CCT Hub</title>
+    <meta name="description" content="Structured course materials covering limits, derivatives, applications, and integrals.">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand"><a href="index.html">Calculus CCT</a></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="teachers.html">Teacher Profiles</a></li>
+            <li><a href="videos.html">Instructional Videos</a></li>
+            <li><a href="lessons.html">Lessons / Materials</a></li>
+            <li><a href="homework.html">Homework / Practice</a></li>
+            <li><a href="assessments.html">Assessments</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <div class="page-content">
+        <section class="bg-white" data-aos="fade-up">
+            <h2 class="section-title">Lesson Topics</h2>
+            <p style="text-align: center; margin-bottom: 2rem;">Explore the fundamental pillars of calculus through text explanations, visualizations, and interactive tools.</p>
+            
+            <div style="display: flex; gap: 1rem; justify-content: center; margin-bottom: 3rem; flex-wrap: wrap;">
+                <a href="https://www.desmos.com/calculator" target="_blank" class="cta-button" style="background:var(--primary); font-size: 0.9rem; padding: 0.8rem 1.5rem;">Interactive Desmos Tool ↗</a>
+                <a href="https://www.khanacademy.org/math/calculus-1" target="_blank" class="cta-button" style="background:var(--accent-gold); color:var(--primary); font-size: 0.9rem; padding: 0.8rem 1.5rem;">Khan Academy Calculus ↗</a>
+            </div>
+
+            <div class="hw-container">
+                <!-- Topic 1 -->
+                <div class="hw-item active">
+                    <div class="hw-header">
+                        <span class="hw-title">1. Limits and Continuity</span>
+                        <span class="hw-icon">▼</span>
+                    </div>
+                    <div class="hw-body" style="max-height: 2000px;">
+                        <div class="hw-content">
+                            <h3>Understanding the Boundary</h3>
+                            <p>Limits describe the behavior of a function as it gets arbitrarily close to a specific point, but not necessarily reaching it. It is the core concept that builds the entirety of calculus.</p>
+                            <div style="background: var(--grid-color); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0;">
+                                <p class="math-font" style="text-align: center; font-size: 1.2rem;">
+                                    \( \lim_{x \to a} f(x) = L \)
+                                </p>
+                            </div>
+                            <p><strong>Continuity</strong> requires three conditions at a point \( x = c \):</p>
+                            <ol style="margin-left: 2rem; margin-top: 1rem;">
+                                <li>\( f(c) \) is defined.</li>
+                                <li>The limit \( \lim_{x \to c} f(x) \) exists.</li>
+                                <li>\( \lim_{x \to c} f(x) = f(c) \)</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Topic 2 -->
+                <div class="hw-item" data-aos="fade-down" data-aos-duration="600">
+                    <div class="hw-header">
+                        <span class="hw-title">2. Derivatives</span>
+                        <span class="hw-icon">▼</span>
+                    </div>
+                    <div class="hw-body">
+                        <div class="hw-content">
+                            <h3>Rates of Change</h3>
+                            <p>The derivative measures the sensitivity to change of the function value with respect to a change in its argument. Graphically, it represents the slope of the tangent line to the curve at any point.</p>
+                            <div style="background: var(--grid-color); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0;">
+                                <p class="math-font" style="text-align: center; font-size: 1.2rem;">
+                                    \( f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h} \)
+                                </p>
+                            </div>
+                            <h4>Common Rules:</h4>
+                            <ul style="margin-left: 2rem;">
+                                <li><strong>Power Rule:</strong> \( \frac{d}{dx}[x^n] = nx^{n-1} \)</li>
+                                <li><strong>Product Rule:</strong> \( (fg)' = f'g + fg' \)</li>
+                                <li><strong>Chain Rule:</strong> \( \frac{d}{dx} [f(g(x))] = f'(g(x))g'(x) \)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Topic 3 -->
+                <div class="hw-item" data-aos="fade-down" data-aos-duration="600">
+                    <div class="hw-header">
+                        <span class="hw-title">3. Applications of Derivatives</span>
+                        <span class="hw-icon">▼</span>
+                    </div>
+                    <div class="hw-body">
+                        <div class="hw-content">
+                            <h3>Real-World Optimization</h3>
+                            <p>Derivatives are used to find maximums, minimums, and rates of growth. Applications include related rates (e.g., how fast the water level rises in a cone) and optimization problems (e.g., maximizing the volume of a box).</p>
+                            <p>If \( f'(x) = 0 \), the point \( x \) is a critical point where local extremums may lie.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Topic 4 -->
+                <div class="hw-item" data-aos="fade-down" data-aos-duration="600">
+                    <div class="hw-header">
+                        <span class="hw-title">4. Introduction to Integrals</span>
+                        <span class="hw-icon">▼</span>
+                    </div>
+                    <div class="hw-body">
+                        <div class="hw-content">
+                            <h3>Accumulation and The Area Under a Curve</h3>
+                            <p>Integration is the reverse process of differentiation. The definite integral computes the signed area of the region in the xy-plane bounded by the graph of the function.</p>
+                            <div style="background: var(--grid-color); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0;">
+                                <p class="math-font" style="text-align: center; font-size: 1.2rem;">
+                                    \( \int_{a}^{b} f(x) \, dx = F(b) - F(a) \)
+                                </p>
+                            </div>
+                            <p>This is known as the <em>Fundamental Theorem of Calculus</em>, directly linking integration and differentiation.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Calculus CCT Hub. Crafted with mathematically perfect precision.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false
+        });
+    </script>
+</body>
+</html>
+

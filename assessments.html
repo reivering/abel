@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessments | Calculus CCT Hub</title>
+    <meta name="description" content="Calculus quizzes and final exam categorized by Knowledge, Application, Thinking, and Communication.">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand"><a href="index.html">Calculus CCT</a></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="teachers.html">Teacher Profiles</a></li>
+            <li><a href="videos.html">Instructional Videos</a></li>
+            <li><a href="lessons.html">Lessons / Materials</a></li>
+            <li><a href="homework.html">Homework / Practice</a></li>
+            <li><a href="assessments.html">Assessments</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <div class="page-content">
+        <section class="bg-white" data-aos="fade-up">
+            <h2 class="section-title">SECTION A: QUIZZES & ASSESSMENTS</h2>
+            <p style="text-align: center; margin-bottom: 3rem;">Short quizzes distributed across the learning period to continually test and refine your skills.</p>
+            
+            <div class="cards-grid">
+                <!-- Quiz 1 -->
+                <div class="card" data-aos="fade-up">
+                    <div class="katc-tags">
+                        <span class="tag tag-k" title="Knowledge">[K]</span>
+                        <span class="tag tag-a" title="Application">[A]</span>
+                    </div>
+                    <h3>Quiz 1: Limits and Continuity</h3>
+                    <p style="margin-bottom: 1rem;">Test your ability to evaluate basic limit expressions and identify points of discontinuity.</p>
+                    <div style="background: var(--grid-color); padding: 1rem; border-radius: 8px;">
+                        <p><strong>Sample Prompt:</strong> Evaluate \( \lim_{x \to 0} \frac{\sin x}{x} \) and explain its significance.</p>
+                        <button class="solution-toggle">Show Strategy</button>
+                        <div class="solution-content">
+                            <em>Solution Strategy:</em> This is a fundamental trigonometric limit evaluating to 1.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quiz 2 -->
+                <div class="card" data-aos="fade-up">
+                    <div class="katc-tags">
+                        <span class="tag tag-k" title="Knowledge">[K]</span>
+                        <span class="tag tag-a" title="Application">[A]</span>
+                        <span class="tag tag-c" title="Communication">[C]</span>
+                    </div>
+                    <h3>Quiz 2: Derivative Rules</h3>
+                    <p style="margin-bottom: 1rem;">Ensure mastery over Power, Product, Quotient, and Chain rules.</p>
+                    <div style="background: var(--grid-color); padding: 1rem; border-radius: 8px;">
+                        <p><strong>Sample Prompt:</strong> Apply the chain rule to \( f(x) = (3x^2 + \sin x)^4 \).</p>
+                        <button class="solution-toggle">Show Strategy</button>
+                        <div class="solution-content">
+                            <em>Solution Strategy:</em> Bring down the power 4, subtract 1, then multiply by the derivative of the inner function \( 6x + \cos x \).
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quiz 3 -->
+                <div class="card" data-aos="fade-up">
+                    <div class="katc-tags">
+                        <span class="tag tag-t" title="Thinking">[T]</span>
+                        <span class="tag tag-a" title="Application">[A]</span>
+                    </div>
+                    <h3>Quiz 3: Applications of Deriv.</h3>
+                    <p style="margin-bottom: 1rem;">Solve real-world related rates and identify extrema.</p>
+                    <div style="background: var(--grid-color); padding: 1rem; border-radius: 8px;">
+                        <p><strong>Sample Prompt:</strong> A ladder 10ft long rests against a wall. The bottom is sliding away at 1 ft/s...</p>
+                        <button class="solution-toggle">Show Strategy</button>
+                        <div class="solution-content">
+                            <em>Solution Strategy:</em> Use Pythagorean theorem \( x^2 + y^2 = 100 \). Differentiate implicitly with respect to \( t \).
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="final-exam" style="background-color: var(--bg-light);" data-aos="fade-up">
+            <h2 class="section-title">SECTION B: FINAL EXAM</h2>
+            <p style="text-align: center; margin-bottom: 3rem;">This comprehensive unit test combines all KATC elements. Evaluate your complete grasp of calculus concepts.</p>
+            
+            <div class="hw-container">
+                <div class="hw-item" data-aos="fade-down" data-aos-duration="600">
+                    <div class="hw-header">
+                        <span class="hw-title">Final Exam Question Packet</span>
+                        <span class="hw-icon">▼</span>
+                    </div>
+                    <div class="hw-body" style="max-height: 2000px;">
+                        <div class="hw-content">
+                            <!-- Knowledge -->
+                            <div style="margin-bottom: 2rem; border-left: 4px solid #3498DB; padding-left: 1rem;">
+                                <span class="tag tag-k" style="margin-bottom: 0.5rem; display: inline-block;">Knowledge [K]</span>
+                                <p><strong>Problem:</strong> Define the derivative using limits.</p>
+                                <button class="solution-toggle">Show Solution</button>
+                                <div class="solution-content">
+                                    <strong>Worked Solution:</strong><br>
+                                    The limit definition of the derivative describes the instantaneous rate of change of a function \( f(x) \) at a given point by taking secant lines getting closer together.
+                                    <br><br>
+                                    \( f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h} \)
+                                </div>
+                            </div>
+                            
+                            <hr style="border: 0; border-top: 1px solid var(--grid-color); margin: 2rem 0;">
+
+                            <!-- Application -->
+                            <div style="margin-bottom: 2rem; border-left: 4px solid #E67E22; padding-left: 1rem;">
+                                <span class="tag tag-a" style="margin-bottom: 0.5rem; display: inline-block;">Application [A]</span>
+                                <p><strong>Problem:</strong> Compute the derivative of \( f(x) = x^3 e^x \).</p>
+                                <button class="solution-toggle">Show Solution</button>
+                                <div class="solution-content">
+                                    <strong>Worked Solution:</strong><br>
+                                    <em>Step 1:</em> Identify product rule pieces. Let \( u = x^3 \) and \( v = e^x \).<br>
+                                    <em>Step 2:</em> Compute derivatives: \( u' = 3x^2 \), \( v' = e^x \).<br>
+                                    <em>Step 3:</em> Apply Product Rule: \( u'v + uv' \).<br>
+                                    <em>Step 4:</em> \( f'(x) = (3x^2)(e^x) + (x^3)(e^x) \).<br>
+                                    <em>Step 5:</em> Factor out common terms: \( f'(x) = e^x \cdot x^2(3 + x) \).
+                                </div>
+                            </div>
+
+                            <hr style="border: 0; border-top: 1px solid var(--grid-color); margin: 2rem 0;">
+
+                            <!-- Thinking -->
+                            <div style="margin-bottom: 2rem; border-left: 4px solid #9B59B6; padding-left: 1rem;">
+                                <span class="tag tag-t" style="margin-bottom: 0.5rem; display: inline-block;">Thinking [T]</span>
+                                <p><strong>Problem:</strong> A farmer has 2400 ft of fencing to fence a rectangular field that borders a straight river. He needs no fence along the river. What are the dimensions of the field that has the largest area?</p>
+                                <button class="solution-toggle">Show Solution</button>
+                                <div class="solution-content">
+                                    <strong>Worked Solution:</strong><br>
+                                    <em>Step 1:</em> Let \( x \) be the width (sides perpendicular to river) and \( y \) be the length (parallel to river). Constraint: \( 2x + y = 2400 \).<br>
+                                    <em>Step 2:</em> Maximize Area: \( A = xy \).<br>
+                                    <em>Step 3:</em> Substitute \( y = 2400 - 2x \) into Area formula: \( A(x) = x(2400 - 2x) = 2400x - 2x^2 \).<br>
+                                    <em>Step 4:</em> Take derivative: \( A'(x) = 2400 - 4x \).<br>
+                                    <em>Step 5:</em> Set \( A'(x) = 0 \): \( 4x = 2400 \Rightarrow x = 600 \).<br>
+                                    <em>Step 6:</em> Find \( y \): \( y = 2400 - 2(600) = 1200 \).<br>
+                                    <br>Dimensions yielding largest area are 600 ft by 1200 ft.
+                                </div>
+                            </div>
+
+                            <hr style="border: 0; border-top: 1px solid var(--grid-color); margin: 2rem 0;">
+
+                            <!-- Communication -->
+                            <div style="margin-bottom: 2rem; border-left: 4px solid #2ECC71; padding-left: 1rem;">
+                                <span class="tag tag-c" style="margin-bottom: 0.5rem; display: inline-block;">Communication [C]</span>
+                                <p><strong>Problem:</strong> Explain the reasoning behind why the derivative of a constant function, \( f(x) = c \), is identically 0. Provide both a graphical and algebraic justification.</p>
+                                <button class="solution-toggle">Show Solution</button>
+                                <div class="solution-content">
+                                    <strong>Worked Solution:</strong><br><br>
+                                    <strong>Graphical Justification:</strong> The graph of \( f(x) = c \) is a horizontal line of height \( c \). The derivative represents the slope of the tangent line. Since the line is perfectly flat horizontally, its slope everywhere is identically \( 0 \), hence the derivative is \( 0 \).<br><br>
+                                    <strong>Algebraic Justification:</strong> Using the limit definition of the derivative: 
+                                    <br>
+                                    \( f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h} \)
+                                    <br> Let \( f(x) = c \), this means for any input, the output is \( c \).
+                                    <br>\( f'(x) = \lim_{h \to 0} \frac{c - c}{h} = \lim_{h \to 0} \frac{0}{h} \)
+                                    <br> Since the numerator is exactly 0 before taking the limit, the limit evaluates precisely to 0. 
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Calculus CCT Hub. Crafted with mathematically perfect precision.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false
+        });
+    </script>
+</body>
+</html>
+

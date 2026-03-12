@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework & Practice | Calculus CCT Hub</title>
+    <meta name="description" content="Calculus homework assignments with step-by-step expandable solutions.">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand"><a href="index.html">Calculus CCT</a></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="teachers.html">Teacher Profiles</a></li>
+            <li><a href="videos.html">Instructional Videos</a></li>
+            <li><a href="lessons.html">Lessons / Materials</a></li>
+            <li><a href="homework.html">Homework / Practice</a></li>
+            <li><a href="assessments.html">Assessments</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <div class="page-content">
+        <section class="bg-white" style="min-height: calc(100vh - 80px);" data-aos="fade-up">
+            <h2 class="section-title">Homework & Practice</h2>
+            <p style="text-align: center; margin-bottom: 3rem;">Practice makes perfect. Expand each section to view the assigned problems, then toggle the solutions to check your step-by-step reasoning.</p>
+            
+            <div class="hw-container">
+                
+                <!-- Homework 1 -->
+                <div class="hw-item active">
+                    <div class="hw-header">
+                        <span class="hw-title">Homework 1 – Understanding Limits</span>
+                        <span class="hw-icon">▼</span>
+                    </div>
+                    <div class="hw-body" style="max-height: 2000px;">
+                        <div class="hw-content">
+                            <h4>Questions</h4>
+                            <p><strong>1.</strong> Evaluate the limit: \( \lim_{x \to 2} \frac{x^2 - 4}{x - 2} \)</p>
+                            
+                            <button class="solution-toggle">Show Solution</button>
+                            <div class="solution-content">
+                                <strong>Step-by-step Solution:</strong><br><br>
+                                <em>Step 1:</em> Direct substitution yields \( \frac{2^2 - 4}{2 - 2} = \frac{0}{0} \), an indeterminate form.<br>
+                                <em>Step 2:</em> Factor the numerator, which is a difference of squares: \( x^2 - 4 = (x - 2)(x + 2) \).<br>
+                                <em>Step 3:</em> Rewrite the limit: \( \lim_{x \to 2} \frac{(x - 2)(x + 2)}{x - 2} \).<br>
+                                <em>Step 4:</em> Cancel the common term \( (x - 2) \). Remember \( x \neq 2 \) so this is valid.<br>
+                                <em>Step 5:</em> Evaluate \( \lim_{x \to 2} (x + 2) = 2 + 2 = 4 \).<br>
+                                <br><strong>Answer:</strong> 4
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Homework 2 -->
+                <div class="hw-item" data-aos="fade-down" data-aos-duration="600">
+                    <div class="hw-header">
+                        <span class="hw-title">Homework 2 – Derivative Rules</span>
+                        <span class="hw-icon">▼</span>
+                    </div>
+                    <div class="hw-body">
+                        <div class="hw-content">
+                            <h4>Questions</h4>
+                            <p><strong>1.</strong> Find \( f'(x) \) for \( f(x) = 3x^4 - 2x^2 + 5x - \pi \)</p>
+                            
+                            <button class="solution-toggle">Show Solution</button>
+                            <div class="solution-content">
+                                <strong>Step-by-step Solution:</strong><br><br>
+                                <em>Step 1:</em> Apply the Power Rule: \( \frac{d}{dx}[x^n] = nx^{n-1} \).<br>
+                                <em>Step 2:</em> Derivative of \( 3x^4 \) is \( 4 \cdot 3x^3 = 12x^3 \).<br>
+                                <em>Step 3:</em> Derivative of \( -2x^2 \) is \( 2 \cdot -2x = -4x \).<br>
+                                <em>Step 4:</em> Derivative of \( 5x \) is \( 5 \).<br>
+                                <em>Step 5:</em> The derivative of a constant (\(-\pi\)) is 0.<br>
+                                <br><strong>Answer:</strong> \( f'(x) = 12x^3 - 4x + 5 \)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Homework 3 -->
+                <div class="hw-item" data-aos="fade-down" data-aos-duration="600">
+                    <div class="hw-header">
+                        <span class="hw-title">Homework 3 – Tangent Lines</span>
+                        <span class="hw-icon">▼</span>
+                    </div>
+                    <div class="hw-body">
+                        <div class="hw-content">
+                            <h4>Questions</h4>
+                            <p><strong>1.</strong> Find the equation of the tangent line to the curve \( y = x^2 + 3 \) at \( x = 1 \).</p>
+                            
+                            <button class="solution-toggle">Show Solution</button>
+                            <div class="solution-content">
+                                <strong>Step-by-step Solution:</strong><br><br>
+                                <em>Step 1:</em> Find the point on the curve. At \( x = 1 \), \( y = (1)^2 + 3 = 4 \). The point is (1, 4).<br>
+                                <em>Step 2:</em> Find the derivative to determine the slope \( m \). \( y' = 2x \).<br>
+                                <em>Step 3:</em> Evaluate \( y' \) at \( x = 1 \). Slope \( m = 2(1) = 2 \).<br>
+                                <em>Step 4:</em> Use point-slope form: \( y - y_1 = m(x - x_1) \).<br>
+                                <em>Step 5:</em> Substitute: \( y - 4 = 2(x - 1) \). Simplify to \( y = 2x - 2 + 4 \).<br>
+                                <br><strong>Answer:</strong> \( y = 2x + 2 \)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Homework 4 -->
+                <div class="hw-item" data-aos="fade-down" data-aos-duration="600">
+                    <div class="hw-header">
+                        <span class="hw-title">Homework 4 – Optimization Problems</span>
+                        <span class="hw-icon">▼</span>
+                    </div>
+                    <div class="hw-body">
+                        <div class="hw-content">
+                            <h4>Questions</h4>
+                            <p><strong>1.</strong> An open box is to be made from a 12x12 inch piece of cardboard by cutting equal squares from each corner and folding up the sides. What size square should be cut to maximize volume?</p>
+                            
+                            <button class="solution-toggle">Show Solution</button>
+                            <div class="solution-content">
+                                <strong>Step-by-step Solution:</strong><br><br>
+                                <em>Step 1:</em> Let \( x \) be the side length of the square to be cut. The dimensions of the box are base: \( (12 - 2x) \times (12 - 2x) \) and height \( x \).<br>
+                                <em>Step 2:</em> Write the volume function: \( V(x) = x(12 - 2x)^2 \). Domain is \( (0, 6) \).<br>
+                                <em>Step 3:</em> Expand \( V(x) = x(144 - 48x + 4x^2) = 4x^3 - 48x^2 + 144x \).<br>
+                                <em>Step 4:</em> Find critical points where \( V'(x) = 0 \). \( V'(x) = 12x^2 - 96x + 144 \).<br>
+                                <em>Step 5:</em> Set to 0 and divide by 12: \( x^2 - 8x + 12 = 0 \). Factor: \( (x - 2)(x - 6) = 0 \).<br>
+                                <em>Step 6:</em> Since \( x=6 \) yields 0 volume, the max occurs at \( x = 2 \).<br>
+                                <br><strong>Answer:</strong> 2 inch squares.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Homework 5 -->
+                <div class="hw-item" data-aos="fade-down" data-aos-duration="600">
+                    <div class="hw-header">
+                        <span class="hw-title">Homework 5 – Introduction to Integrals</span>
+                        <span class="hw-icon">▼</span>
+                    </div>
+                    <div class="hw-body">
+                        <div class="hw-content">
+                            <h4>Questions</h4>
+                            <p><strong>1.</strong> Evaluate the definite integral: \( \int_{0}^{2} (3x^2 + 2x) \, dx \)</p>
+                            
+                            <button class="solution-toggle">Show Solution</button>
+                            <div class="solution-content">
+                                <strong>Step-by-step Solution:</strong><br><br>
+                                <em>Step 1:</em> Find the antiderivative using reverse power rule: \( \int(ax^n)dx = \frac{a}{n+1}x^{n+1} \).<br>
+                                <em>Step 2:</em> Anti-derivative of \( 3x^2 \) is \( x^3 \).<br>
+                                <em>Step 3:</em> Anti-derivative of \( 2x \) is \( x^2 \). Total: \( F(x) = x^3 + x^2 \).<br>
+                                <em>Step 4:</em> Apply the Fundamental Theorem of Calculus: \( F(2) - F(0) \).<br>
+                                <em>Step 5:</em> Evaluate: \( (2^3 + 2^2) - (0^3 + 0^2) = (8 + 4) - 0 = 12 \).<br>
+                                <br><strong>Answer:</strong> 12
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Calculus CCT Hub. Crafted with mathematically perfect precision.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false
+        });
+    </script>
+</body>
+</html>
+

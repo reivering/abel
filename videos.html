@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructional Videos | Calculus CCT Hub</title>
+    <meta name="description" content="Watch instructional videos on calculus concepts, from limits to derivatives.">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand"><a href="index.html">Calculus CCT</a></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="teachers.html">Teacher Profiles</a></li>
+            <li><a href="videos.html">Instructional Videos</a></li>
+            <li><a href="lessons.html">Lessons / Materials</a></li>
+            <li><a href="homework.html">Homework / Practice</a></li>
+            <li><a href="assessments.html">Assessments</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <div class="page-content">
+        <section class="bg-white" style="min-height: calc(100vh - 80px);" data-aos="fade-up">
+            <h2 class="section-title">Instructional Videos</h2>
+            
+            <!-- Video 1 -->
+            <div class="video-wrapper" data-aos="fade-right">
+                <div class="responsive-video">
+                    <!-- YouTube Embed (Placeholder Math Video: e.g., 3Blue1Brown Limits) -->
+                    <iframe src="https://www.youtube.com/embed/kfF40MiS7zA" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>1. Understanding Limits</h3>
+                    <p><strong>Description:</strong> An intuitive introduction to limits, exploring what happens when a function approaches a specific value.</p>
+                    <p><strong>Learning Objectives:</strong></p>
+                    <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+                        <li>Define a limit informally.</li>
+                        <li>Evaluate one-sided and two-sided limits graphically.</li>
+                        <li>Understand when a limit does not exist.</li>
+                    </ul>
+                    <p><strong>Key Concepts:</strong> \( \lim_{x \to c} f(x) = L \), Asymptotes, Continuity.</p>
+                    
+                    <div class="animation-box" id="anim-limit">
+                        <!-- Simple visual for limit approaching a hole -->
+                        <svg width="100%" height="100%" viewBox="0 0 200 100">
+                            <!-- Axis -->
+                            <line x1="20" y1="80" x2="180" y2="80" stroke="#1A1A1A" stroke-width="2"/>
+                            <line x1="100" y1="20" x2="100" y2="80" stroke="#1A1A1A" stroke-width="2" stroke-dasharray="4"/>
+                            <!-- Curve -->
+                            <path d="M 20 20 Q 50 30 95 45" fill="none" stroke="var(--primary)" stroke-width="3"/>
+                            <path d="M 105 55 Q 150 70 180 80" fill="none" stroke="var(--primary)" stroke-width="3"/>
+                            <!-- Hole at limit -->
+                            <circle cx="100" cy="50" r="5" fill="white" stroke="var(--accent-emerald)" stroke-width="2"/>
+                            <!-- Approaching arrows -->
+                            <path d="M 80 40 L 90 45 L 85 35" fill="var(--accent-gold)"/>
+                            <path d="M 120 60 L 110 55 L 115 65" fill="var(--accent-gold)"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video 2 -->
+            <div class="video-wrapper" data-aos="fade-right">
+                <div class="responsive-video">
+                    <!-- YouTube Embed (Placeholder Math Video: e.g., 3Blue1Brown Derivatives) -->
+                    <iframe src="https://www.youtube.com/embed/9vKqVkMQHKk" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>2. Introduction to Derivatives</h3>
+                    <p><strong>Description:</strong> Discover the derivative as the instantaneous rate of change and the slope of a curve's tangent line.</p>
+                    <p><strong>Learning Objectives:</strong></p>
+                    <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+                        <li>Compute average vs. instantaneous rate of change.</li>
+                        <li>Understand the limit definition of the derivative.</li>
+                    </ul>
+                    <p><strong>Key Concepts:</strong> \( f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h} \), Tangents, Slope.</p>
+                    
+                    <div class="animation-box" id="anim-derivative">
+                        <!-- Simple visual for tangent line -->
+                        <svg width="100%" height="100%" viewBox="0 0 200 100">
+                            <!-- Curve -->
+                            <path d="M 20 80 Q 100 0 180 80" fill="none" stroke="var(--accent-emerald)" stroke-width="3"/>
+                            <!-- Tangent Line -->
+                            <line x1="40" y1="0" x2="140" y2="80" stroke="var(--accent-gold)" stroke-width="2"/>
+                            <!-- Point of tangency -->
+                            <circle cx="90" cy="40" r="4" fill="var(--primary)"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Calculus CCT Hub. Master your concepts.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false
+        });
+    </script>
+</body>
+</html>
+
